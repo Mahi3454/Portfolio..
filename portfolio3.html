@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .container {
+        border: 2px solid none;
+        background: rgb(3, 3, 3);
+        position: absolute;
+        top: 100px;
+        width: 98%;
+        height: 1000px;
+        display: flex;
+    }
+
+    .card {
+        height: 473px;
+        margin: 97px 61px;
+        box-shadow: 5px 5px 20px rgb(57, 47, 72);
+        overflow: hidden;
+
+    }
+
+    .card .class1 img {
+        width: 500px;
+    }
+
+    img {
+        height: 473px;
+        width: 350px;
+        border-radius: 20px;
+        transition: .5s;
+    }
+
+    .intro {
+        height: 70px;
+        width: 350px;
+        padding: 6px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 426px;
+        background: rgba(197, 185, 185, 0.5);
+        color: rgb(0, 0, 0);
+        font-family: "Varela Round", sans-serif;
+        transition: .5s;
+    }
+
+    h2 {
+        color: white;
+        margin: 10px;
+        font-size: 40px;
+    }
+
+    p {
+
+        font-size: 20px;
+        margin: 20px;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+
+    span {
+        font-weight: bold;
+    }
+
+    .card:hover {
+        cursor: pointer;
+    }
+
+    .card:hover .intro {
+        height: 220px;
+        bottom: 426px;
+        background: rgb(98, 95, 95);
+        opacity: .8;
+    }
+
+    .card:hover p {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .card:hover img {
+        transform: scale(1.1) rotate(-3deg);
+    }
+
+
+    .mid {
+
+        display: block;
+        width: 1052px;
+        margin: 20px 474px;
+        border-radius: 8px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .navbar li a {
+        color: antiquewhite;
+        font-size: 18px;
+        text-decoration: none;
+        font-family: "Varela Round", sans-serif;
+        padding: 11px 50px;
+        border: 2px solid none;
+        margin: 0px 8px;
+        box-shadow: 0 0 5px #4f3866, 0 0 25px #442842;
+        border-radius: 21px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+
+        color: rgb(112, 115, 118);
+        box-shadow: 0 0 5px #461a56, 0 0 25px #5c2773, 0 0 50px #4c0a64, 0 0 100px #7b11ac, 0 0 200px #671265;
+    }
+
+    .home {
+        position: absolute;
+        display: inline-block;
+    }
+
+    .home img {
+
+        width: 64px;
+        height: 60px;
+        margin: 2px 87px;
+        filter: invert(100%);
+    }
+
+    hr {
+        color: black;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="home"><img src="img5.webp" alt=""></div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./portfolio2.html">About Me</a></li>
+                <li><a href="#" class="active">Education</a></li>
+                <li><a href="./portfolio4.html">Contact</a></li>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="img3.jpeg" width=400 alt="C.D.O MERI">
+            <div class="intro">
+                <h2><b>CDO Meri Highschool</b></h2>
+                <hr>
+                <p>
+                <h5>2008-2021<br>10th percentage: 93.61</h5>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img2.jpg" width=400 alt="Unnati college">
+            <div class="intro">
+                <h2><b>Unnati Jr. College</b></h2>
+                <hr>
+                <p>
+                <h5>2021-2023<br>12th percentage: 81.61<br>MHT-CET score:99.55</h5>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="class1"><img src="img4.jpg" width=400 alt="V.J.T.I">
+                <div class="intro">
+                    <h2><b>V.J.T.I</b></h2>
+                    <hr>
+                    <p>
+                    <h5>2023-2027<br>BTech in Computer Engineering</h5>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

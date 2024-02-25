@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Barriecito&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Barriecito&family=Concert+One&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<style>
+    body {
+        height: 100%;
+        width: 100%;
+        background: black;
+
+    }
+
+    .mid {
+
+        display: block;
+        width: 1052px;
+        margin: 20px 474px;
+        border-radius: 8px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .navbar li a {
+        color: antiquewhite;
+        font-size: 18px;
+        text-decoration: none;
+        font-family: "Varela Round", sans-serif;
+        padding: 11px 50px;
+        border: 2px solid none;
+        margin: 0px 8px;
+        box-shadow: 0 0 5px #4f3866, 0 0 25px #442842;
+        border-radius: 21px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+
+        color: rgb(112, 115, 118);
+        box-shadow: 0 0 5px #461a56, 0 0 25px #5c2773, 0 0 50px #4c0a64, 0 0 100px #7b11ac, 0 0 200px #671265;
+    }
+
+    .intro {
+
+        border: 2px solid none;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 154px;
+        right: 50px;
+        height: 414px;
+        border-radius: 40px;
+        width: 646px;
+        margin: 79px 4px;
+        background: transparent;
+        transition: 3s;
+    }
+
+    .intro:hover {
+        background-color: #151414;
+        opacity: 0.8;
+    }
+
+    .photo {
+        border: 2px solid none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 154px;
+        left: 30px;
+        height: 414px;
+        border-radius: 20px;
+        width: 646px;
+
+    }
+
+    .photo img {
+        border: 2px solid none;
+        background: transparent;
+        transition: 3s;
+    }
+
+    .photo img:hover {
+        background: #461a56;
+        opacity: 0.2;
+    }
+
+    .home {
+        display: flex;
+        position: absolute;
+    }
+
+    .home img {
+
+        width: 64px;
+        height: 52px;
+        margin: 20px 58px;
+        filter: invert(100%);
+    }
+
+    .photo {
+        margin: 10px 20px;
+        padding: 10px 20px;
+    }
+
+    .photo img {
+        width: 222px;
+        height: 293px;
+        border-radius: 135px;
+        box-shadow: 10px 10px #121111;
+        margin: 99px 189px;
+    }
+
+    h1 {
+        top: 200px;
+        left: 50%;
+        font-size: 4vw;
+        text-align: left;
+        font-family: "Concert One", sans-serif;
+        -webkit-text-stroke: 0.05vw #7eb9d1;
+        text-transform: uppercase;
+        text-shadow: 0 0 5px #b414d0, 0 0 8px #b414d0, 0 0 12px #b414d0;
+    }
+
+    h1::before {
+        content: attr(data-text);
+        position: absolute;
+        width: 0;
+        height: 4vw;
+        color: #d8c5dd;
+        -webkit-text-stroke: 0vw #d3c3d6;
+        border-right: 2px solid #e3d1e7;
+        overflow: hidden;
+        animation: animate 6s linear infinite;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        90% {
+            width: 88%;
+        }
+    }
+
+    p {
+        font-size: 40px;
+        -webkit-text-stroke: 0.1vw #3f214a;
+        text-align: left;
+        color: white;
+        font-family: "Titan One", sans-serif;
+    }
+
+    .pop {
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border: 2px solid none;
+        background-color: rgb(8, 6, 6);
+        width: 98%;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social a {
+        text-decoration: none;
+        padding: 10px;
+        background: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+    .social a i {
+        font-size: 17px;
+        color: #121111;
+        opacity: 0.9;
+    }
+
+    .social a:hover {
+        background-color: #121111;
+        transition: 0.5s;
+    }
+
+    .social a:hover i {
+        color: white;
+        transition: 0.5s;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="home"><img src="imga.jpeg" alt=""></div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="./portfolio2.html">About Me</a></li>
+                <li><a href="./portfolio3.html">Education</a></li>
+                <li><a href="./portfolio4.html">Contact</a></li>
+
+        </div>
+    </header>
+
+
+    <div class="intro">
+        <p class="pop">Hello...,I'm
+        </p>
+        <h1 data-text="MAHIMA_SONAWANE">MAHIMA_SONAWANE</h1>
+        <p>And a Beginner Developer</p>
+    </div>
+
+    <div class="photo">
+        <img src="img1.jpeg">
+    </div>
+
+    <footer>
+        <div class="fcont">
+            <div class="social">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+
+            </div>
+    </footer>
+</body>
+
+</html>
